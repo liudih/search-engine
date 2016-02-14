@@ -1,0 +1,71 @@
+{
+      "title"           	:"this is test title for product ",
+      "desc"            	:"The count API allows one to easily execute a query and get the number of matches for that query. It can be executed across one or more indices and across one or more types",
+      "sku"             	:"987123kijd81231",
+      "listingid"       	:"aldsfdasof123123",
+      "searchKeys"      	:"search china made in china",
+      "releaseTime" 		:"2015-12-17",
+      "commonsNum"  		:98,
+      "prodcutCommonScore"  :5.0,
+      "isOnSale"    		:true,
+      "tagNames"    		:["hot sals","free shipping"],
+      "costPrice"   		:"6003.00",
+      "price"       		:"5900.00",
+      "yjprice"     		:"6200.00",
+      "weight"      		:"320.00",
+      "salesVolume" 		:"6032",
+      "brand"       		:"apple",
+      "site"				:"en",
+      "depot"       		:[{
+            					"depotName":"china depot",
+            					"depotid":11234
+        					},{
+            					"depotName":"englist depot",
+            					"depotid":54321
+        					}],
+      "currency"    		:"$",
+      "productType" 		:{
+            					"productTypeName":"\u7535\u5B50\u4EA7\u54C1",
+            					"productTypeId":765321,
+            					"productParentId":1
+        },
+      "orderScore"  :"0.98",
+        "spec_key":[{
+            "speckey"   :"color",
+            "skus" :["000001","000002","000003","0000011","0000022","0000033","000004"]
+        },{
+            "speckey"   :"size",
+            "skus" :["000001","000002","000003","0000011","0000022","0000033","000004"]
+        }],
+      "spec_value"  :[{
+            "spec_value_key":"\u7EA2\u8272",
+            "skus" :["000001","000002","000003"]
+      },{
+            "spec_value_key":"\u9EC4\u8272",
+            "skus" :["000001","000002","000003"]
+      },{
+            "spec_value_key":"\u7D2B\u8272",
+            "skus" :["0000011","0000022","0000033"]
+      },{
+            "spec_value_key":"\u84DD\u8272",
+            "skus" :["0000011","0000022","0000033"]
+      },{
+            "spec_value_key":"\u7EFF\u8272",
+            "skus" :["000004"]
+      },{
+            "spec_value_key":"XXL",
+            "skus" :["000001","000002","000003"]
+      },{
+            "spec_value_key":"XL",
+            "skus" :["000001","000002","000003"]
+      },{
+            "spec_value_key":"L",
+            "skus" :["0000011","0000022","0000033"]
+      },{
+            "spec_value_key":"M",
+            "skus" :["0000011","0000022","0000033"]
+      },{
+            "spec_value_key":"S",
+            "skus" :["000004"]
+      }]
+  }'

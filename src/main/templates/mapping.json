@@ -1,0 +1,203 @@
+{
+  "mappings": {
+    "product": { 
+      	"properties": { 
+	       
+	        "sku"	:{ 
+	        	"type"	:"string",
+	        	"index" :"not_analyzed"
+	        } ,
+	        "listingId"	:{
+	        	"type"	:"string",
+	        	"index"	:"not_analyzed"
+	        },
+	        "searchKeys":{ 
+	        	"type"	:"string",
+	        	"index"	:"not_analyzed",
+	        	"analyzer"	: "standard"
+	        },
+	        "releaseTime"	:{
+	        	"type"	:"date",
+	        	"format":"dateOptionalTime",
+	        	"index"	:"not_analyzed"
+	        },
+			        "commentsNum"	:{
+	        	"type"	:"integer",
+	        	"index"	:"not_analyzed"
+	        },
+	        "prodcutCommonScore"	:{
+	        	"type"	:"integer",
+	        	"index"	:"not_analyzed"
+
+	        } ,
+	        "isOnSale"	:{
+	        	"type"	:"boolean",
+	        	"index"	:"not_analyzed"
+
+	        },
+	        "tagNames"	:{
+	        	"type"	:"string",
+	        	"index"	:"analyzed"
+	        },
+	        "costPrice"	:{
+	        	"type"	:"double",
+	        	"index"	:"not_analyzed"
+	        } ,
+	        "yjprice"	:{
+	        	"type"	:"double",
+	        	"index"	:"not_analyzed"
+	        } ,
+	        "weight"	:{
+	        	"type"	:"double",
+	        	"index"	:"not_analyzed"
+	        } ,
+	        "salesVolume"	:{
+	        	"type"	:"integer",
+	        	"index"	:"not_analyzed"
+	        } ,
+	        "depot"	:{
+	        	"properties": {
+	        		"depotName"	:{
+	        			"type"	:"string",
+	        			"index"	:"not_analyzed"
+	        		},
+	        		"depotid"	:{
+	        			"type"	:"integer",
+	        			"index"	:"no"
+	        		}
+	        	}
+	        },
+	       "promo"	:{
+	        	"properties": {
+	        		"sku"	:{
+	        			"type"	:"string",
+	        			"index"	:"not_analyzed"
+	        		},
+	        		"price"	:{
+	        			"type"	:"double",
+	        			"index"	:"no"
+	        		},
+	        		"price"	:{
+	        			"type"	:"double",
+	        			"index"	:"no"
+	        		},
+	        		"beginDate":{
+	        			"type"	:"date",
+			        	"format":"dateOptionalTime",
+			        	"index"	:"not_analyzed"
+	        		},
+	        		"endDate":{
+	        			"type"	:"date",
+			        	"format":"dateOptionalTime",
+			        	"index"	:"not_analyzed"
+	        		}	        		
+	        	}
+	        },
+	       "mutilLanguages"	:{
+	        	"properties": {
+	        		"title"	:{
+	        			"type"	:"string",
+	        			"index"	:"analyzed"
+	        		},
+	        		"desc"	:{
+	        			"type"	:"string",
+	        			"index"	:"analyzed"
+	        		},
+	        		"keywords"	:{
+	        			"type"	:"string",
+	        			"index"	:"analyzed"
+	        		},
+	        		"languageId":{
+	        			"type"	:"integer",
+			        	"index"	:"analyzed"
+	        		},
+	        		"languageName":{
+	        			"type"	:"string",
+			        	"index"	:"not_analyzed"
+	        		},	        		
+	        		"metaTitle":{
+	        			"type"	:"string",
+			        	"index"	:"not_analyzed"
+	        		},
+	        		"metaDescription":{
+	        			"type"	:"string",
+			        	"index"	:"not_analyzed"
+	        		},	        		
+	        		"metaKeyword":{
+	        			"type"	:"string",
+			        	"index"	:"not_analyzed"
+	        		},
+	        		"url"	:{
+	        			"type"	:"string",
+	        			"index"	:"no"
+	        		},
+	        		"brand"	:{
+			        	"type"	:"string",
+			        	"index"	:"not_analyzed"
+			        } 
+	        	}
+	        },
+	        "items"	:{
+	        	"properties": {
+	        		"keyId"	:{
+	        			"type"	:"integer",
+	        			"index"	:"no"
+	        		},
+	        		"key"	:{
+	        			"type"	:"string",
+	        			"index"	:"no"
+	        		},
+	        		"valueId"	:{
+	        			"type"	:"integer",
+	        			"index"	:"no"
+	        		},
+	        		"value":{
+	        			"type"	:"string",
+			        	"index"	:"not_analyzed"
+	        		},
+	        		"languangeId":{
+	        			"type"	:"string",
+			        	"index"	:"no"
+	        		},	        		
+	        		"showImg":{
+	        			"type"	:"string",
+			        	"index"	:"no"
+	        		},
+	        		"visible":{
+	        			"type"	:"boolean",
+			        	"index"	:"no"
+	        		}
+	        	}
+	        },
+	      	"imgs"	:{
+	        			"type"	:"string",
+	        			"index"	:"no"	        			
+	        },
+	        "webSites":{
+	        	"type"	:"integer",
+	        	"index"	:"not_analyzed"
+	        }, 
+	        "productType"   :{
+	        	"properties": {
+	        		"productTypeName"	:{
+	        			"type"	:"string",
+	        			"index"	:"not_analyzed"
+	        		},
+	        		"productTypeId"		:{
+	        			"type"	:"integer",
+	        			"index"	:"not_analyzed"
+	        		},
+	        		"productParentId"	:{
+	        			"type"	:"integer",
+	        			"index"	:"not_analyzed"
+	        		}
+	        	}
+	        },
+	        "orderScore"	:{
+	        	"type"	:"double",
+	        	"index"	:"no"
+	        }
+	    }
+    }
+  }
+}
